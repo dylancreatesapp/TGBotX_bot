@@ -5,7 +5,7 @@ const { Telegraf, Markup } = require('telegraf');
 const BOT_TOKEN = '8175210664:AAEs4eFLN0JmymnaIjsftVHk2Y6bZBQ3X-Y';
 
 // URL to your mini-app hosted on Railway:
-const MINIAPP_URL = "https://tgbotx-miniapp-production.up.railway.app/miniapp.html";
+const MINIAPP_URL = "https://tgbotx-miniapp-production.up.railway.app";
 
 // Create a new Telegraf bot instance:
 const bot = new Telegraf(BOT_TOKEN);
