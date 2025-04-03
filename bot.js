@@ -15,7 +15,8 @@ bot.start((ctx) => {
   ctx.reply(
     'Welcome to TGBotX! Click the button below to log in with Telegram.',
     Markup.inlineKeyboard([
-      [Markup.button.webApp('Open Login Page', LOGIN_URL)]
+      [Markup.button.webApp('Open Login Page', 'https://tgbotx-miniapp-production.up.railway.app/login.html')
+]
     ])
   );
 });
