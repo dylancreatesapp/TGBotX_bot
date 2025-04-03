@@ -8,18 +8,17 @@ const BOT_TOKEN = '8175210664:AAEs4eFLN0JmymnaIjsftVHk2Y6bZBQ3X-Y';
 const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html";
 
 // Create a new Telegraf bot instance:
-const bot = new Telegraf(BOT_TOKEN);
+const MINIAPP_URL = 'https://tgbotx-miniapp-production.up.railway.app/login.html';
 
-// Handle the /start command:
 bot.start((ctx) => {
   ctx.reply(
-    'Welcome to TGBotX! Click the button below to log in with Telegram.',
+    'Welcome to TGBotX! Click the button below to open the mini-app.',
     Markup.inlineKeyboard([
-      [Markup.button.webApp('Open Login Page', 'https://tgbotx-miniapp-production.up.railway.app/login.html')
-]
+      [Markup.button.webApp('Open Login Page', MINIAPP_URL)]
     ])
   );
 });
+
 
 // Launch the bot using long polling:
 bot.launch().then(() => {
