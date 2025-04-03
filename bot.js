@@ -5,7 +5,7 @@ const { Telegraf, Markup } = require('telegraf');
 const BOT_TOKEN = '8175210664:AAEs4eFLN0JmymnaIjsftVHk2Y6bZBQ3X-Y';
 
 // Updated URL to your login page with embed parameter (hosted on Railway)
-const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html?embed=1";
+const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html";
 
 // Create a new Telegraf bot instance:
 const bot = new Telegraf(BOT_TOKEN);
