@@ -4,8 +4,8 @@ const { Telegraf, Markup } = require('telegraf');
 // Your Bot Token from BotFather:
 const BOT_TOKEN = '8175210664:AAEs4eFLN0JmymnaIjsftVHk2Y6bZBQ3X-Y';
 
-// URL to your login page (ensure it's deployed on Railway)
-const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html";
+// Updated URL to your login page with embed parameter (hosted on Railway)
+const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html?embed=1";
 
 // Create a new Telegraf bot instance:
 const bot = new Telegraf(BOT_TOKEN);
@@ -15,7 +15,7 @@ bot.start((ctx) => {
   ctx.reply(
     'Welcome to TGBotX! Click the button below to log in with Telegram.',
     Markup.inlineKeyboard([
-      [Markup.button.webApp('Open Login Page', "https://tgbotx-miniapp-production.up.railway.app/login.html")]
+      [Markup.button.webApp('Open Login Page', LOGIN_URL)]
     ])
   );
 });
