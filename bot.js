@@ -4,7 +4,7 @@ const { Telegraf, Markup } = require('telegraf');
 // Your Bot Token from BotFather:
 const BOT_TOKEN = '8175210664:AAEs4eFLN0JmymnaIjsftVHk2Y6bZBQ3X-Y';
 
-// URL to your new login page (login.html) hosted on Railway:
+// URL to your login page (ensure it's deployed on Railway)
 const LOGIN_URL = "https://tgbotx-miniapp-production.up.railway.app/login.html";
 
 // Create a new Telegraf bot instance:
